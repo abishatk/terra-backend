@@ -30,7 +30,6 @@ pipeline {
 
         stage (" Action") {
             steps {
-                echo "Terraform action is --> ${action}"
                 bat ('terraform ${action} --auto-approve') 
            }
         }
